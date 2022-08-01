@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <wchar.h>
 using namespace std;
 
 int sum(vector<int>& v)
@@ -57,7 +58,7 @@ int main()
 	
 #pragma endregion:셀프 넘버
 #pragma region 1065
-	int i = 1, j = 1, N;
+	/*int i = 1, j = 1, N;
 	cin >> N;
 	for (; i < N + 1; ++i)
 	{
@@ -75,8 +76,28 @@ int main()
 				++j;
 		}
 	}
-	cout << j;
+	cout << j;*/
 #pragma endregion:한수
+#pragma region 11654
+	/*char a;
+	cin >> a;
+	cout << (int)a;*/
+#pragma endregion:아스키 코드
+#pragma region 11720
+	int i, n = 0;
+	char a[101]; // 문제의 조건이 숫자의 개수 N(1 <= N <= 100)인데, 
+				 // char 배열로 문자열을 입력받게 되면 '\0' 널문자가 마지막에 삽입되므로
+				 // 배열의 개수를 100이 아닌 101로 설정해주어야 한다.
+	cin >> i;
+	cin >> a;
+	for (int j = 0; j < i; ++j)
+	{
+		if (a[j] == '\0')
+			break;
+		n += a[j]-'0';
+	}
+	cout << n;
+#pragma endregion::숫자의 합
 	return 0;
 }
 
