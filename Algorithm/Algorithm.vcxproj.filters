@@ -4,5 +4,6 @@
     <ClCompile Include="백준0725.cpp" />
     <ClCompile Include="백준0726.cpp" />
     <ClCompile Include="백준0801.cpp" />
+    <ClCompile Include="백준0803.cpp" />
   </ItemGroup>
 </Project>
