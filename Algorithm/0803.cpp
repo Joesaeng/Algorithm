@@ -99,7 +99,7 @@ int main()
 	cout << ans;*/
 #pragma endregion:단어의 개수
 #pragma region 2908
-	char A[4], B[4];
+	/*char A[4], B[4];
 	int a, b;
 	char tmp = 0;
 	cin >> A >> B;
@@ -111,9 +111,7 @@ int main()
 	B[2] = tmp;
 	a = stoi(A);
 	b = stoi(B);
-	a > b ? cout << a : cout << b;
-
-
+	a > b ? cout << a : cout << b;*/
 #pragma endregion:상수
 
 	return 0;

@@ -1,9 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="백준0725.cpp" />
-    <ClCompile Include="백준0726.cpp" />
-    <ClCompile Include="백준0801.cpp" />
-    <ClCompile Include="백준0803.cpp" />
+    <ClCompile Include="0725.cpp">
+      <Filter>2207</Filter>
+    </ClCompile>
+    <ClCompile Include="0726.cpp">
+      <Filter>2207</Filter>
+    </ClCompile>
+    <ClCompile Include="0803.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="0801.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="0804.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="2207">
+      <UniqueIdentifier>{4d0f91b5-16d0-4d4e-bcde-2b30cfb04f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2208">
+      <UniqueIdentifier>{13f7eabd-c664-4289-a3cb-0ddc388573be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
