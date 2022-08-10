@@ -22,7 +22,13 @@
     <ClCompile Include="0808.cpp">
       <Filter>2208</Filter>
     </ClCompile>
-    <ClCompile Include="0808_.cpp">
+    <ClCompile Include="0808_2.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="0810.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="0810_2.cpp">
       <Filter>2208</Filter>
     </ClCompile>
   </ItemGroup>

@@ -64,7 +64,7 @@ int main()
 			b[j] = true;
 		}
 	} // 소수부터 구함
-	int T, n,va=0;
+	int T, n;
 	cin >> T;
 	for (int i = 0; i < T; ++i)
 	{
