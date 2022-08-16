@@ -37,6 +37,12 @@
     <ClCompile Include="0813.cpp">
       <Filter>2208</Filter>
     </ClCompile>
+    <ClCompile Include="0816.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="0817.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
