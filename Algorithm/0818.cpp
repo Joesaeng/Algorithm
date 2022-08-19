@@ -92,8 +92,6 @@ using namespace std;
 //	return 0;
 //}
 #pragma endregion: Base Conversion
-
-// 다이나믹 프로그래밍 1
 #pragma region 1463
 int main()
 {
@@ -117,8 +115,9 @@ int main()
 			v[i] = min(1 + v[i / 2], 1 + v[i - 1]); // ex) i == 10 ? min(1 + v[5](3회), 1 + v[9](2회)) == 3회
 		else if (i % 3 == 0)
 			v[i] = min(1 + v[i / 3], 1 + v[i - 1]); // ex) i == 21 ? min(1 + v[7](3회), 1 + v[20](4회)) == 4회
-	}																					//  v[20] == min(1 + v[10](3회), 1+ v[19](4회))
-																						//  v[19] == min(1 + v[18]
+	}												//  v[20] == min(1 + v[10](3회), 1+ v[19](4회)) == 4회
+													//  v[19] == 1 + v[18](3회) == 4회
+													//  v[18] == min(1 + v[6](2회),1 + v[9](2회)) == 3회 . . .  이런 식으로 풀이가 된다.
 	cout << v[n];
 
 	return 0;

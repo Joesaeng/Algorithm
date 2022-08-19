@@ -7,46 +7,55 @@
     <ClCompile Include="0726.cpp">
       <Filter>2207</Filter>
     </ClCompile>
-    <ClCompile Include="0803.cpp">
-      <Filter>2208</Filter>
-    </ClCompile>
     <ClCompile Include="0801.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
+    </ClCompile>
+    <ClCompile Include="0803.cpp">
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0804.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0805.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0808.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0808_2.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0810.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0810_2.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0811.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0813.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0816.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0817.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0817_2.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\08</Filter>
     </ClCompile>
     <ClCompile Include="0818.cpp">
+      <Filter>2208\08</Filter>
+    </ClCompile>
+    <ClCompile Include="0819.cpp">
+      <Filter>2208\08</Filter>
+    </ClCompile>
+    <ClCompile Include="1912.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="1699.cpp">
       <Filter>2208</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,6 +65,9 @@
     </Filter>
     <Filter Include="2208">
       <UniqueIdentifier>{13f7eabd-c664-4289-a3cb-0ddc388573be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2208\08">
+      <UniqueIdentifier>{7bbbe2f8-5fb9-478d-a29d-af89b55ee9ec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
