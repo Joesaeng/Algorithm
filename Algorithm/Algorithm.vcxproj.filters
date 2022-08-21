@@ -58,6 +58,21 @@
     <ClCompile Include="1699.cpp">
       <Filter>2208</Filter>
     </ClCompile>
+    <ClCompile Include="2225.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="15988.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="1149.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="1309.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11057.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
