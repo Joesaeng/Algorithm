@@ -1,4 +1,4 @@
-// BOJ 15988 :: 1,2,3 더하기 3
+// BOJ 11057 :: 오르막 수
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;

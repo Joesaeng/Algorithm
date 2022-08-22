@@ -1,4 +1,4 @@
-// BOJ 1912 :: 합분해
+// BOJ 2225 :: 합분해
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;

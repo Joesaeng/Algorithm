@@ -73,6 +73,33 @@
     <ClCompile Include="11057.cpp">
       <Filter>2208</Filter>
     </ClCompile>
+    <ClCompile Include="9465.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="2156.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="1932.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11055.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11722.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11054.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="13398.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="2133.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="17404.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
