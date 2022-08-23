@@ -5,32 +5,27 @@ using ll = long long;
 #define KMAX 10000 + 1
 ll v[KMAX] = {0,};
 ll MAX = 0;
-ll MIN = 0;
+ll MIN = 1;
 ll MID = 0;
-ll res;
+ll res = 0;
 void cut(int n,int k)
 {
 	while (MIN <= MAX)
 	{
 		ll cnt = 0;
 		MID = (MAX + MIN) / 2;
-		if (MID == 0)
-		{
-			res = 1;
-			break;
-		}
 		for (int i = 1; i <= k; ++i)
 		{
 			cnt += v[i] / MID;
 		}
-		if (cnt < n)
+		if (cnt >= n)
 		{
-			MAX = MID - 1;
-			res = MID - 1;
+			MIN = MID + 1;
+			res = res > MID ? res : MID;
 		}
 		else
 		{
-			MIN = MID + 1;
+			MAX = MID - 1;
 		}
 	}
 }
