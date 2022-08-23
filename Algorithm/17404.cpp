@@ -9,23 +9,42 @@ enum
 	B = 2,
 };
 #define MAX 1001
+#define MAXV 1000 * 1000 + 1
 ll v[MAX][3];
 ll dp[MAX][3];
 
 ll func(int x)
 {
 	dp[0][R] = dp[0][G] = dp[0][B] = 0;
-	dp[1][R] = v[1][R];
-	dp[1][G] = v[1][G];
-	dp[1][B] = v[1][B];
-	
-	for (int i = 2; i <= x + 1; ++i)
+	ll tmp = MAXV;
+	for (int fh = R; fh <= B; ++fh)
 	{
-		dp[i][R] = min(dp[i-1][G],dp[i-1][B])+ v[i][R];
-		dp[i][G] = min(dp[i-1][R],dp[i-1][B])+ v[i][G];
-		dp[i][B] = min(dp[i-1][R],dp[i-1][G])+ v[i][B];
+		for (int i = R; i <= B; ++i)
+		{
+			if (i != fh)
+				dp[1][i] = MAXV;
+			else
+				dp[1][i] = v[1][i];
+		}
+
+		for (int i = 2; i <= x; ++i)
+		{
+			dp[i][R] = min(dp[i - 1][G], dp[i - 1][B]) + v[i][R];
+			dp[i][G] = min(dp[i - 1][R], dp[i - 1][B]) + v[i][G];
+			dp[i][B] = min(dp[i - 1][R], dp[i - 1][G]) + v[i][B];
+		}
+
+		for (int i = R; i <= B; ++i)
+		{
+			if (i == fh)
+				continue;
+			else
+				tmp = min(tmp, dp[x][i]);
+		}
 	}
-	return min(dp[x][R], min(dp[x][G], dp[x][B]));
+
+	
+	return tmp;
 }
 
 int main()
