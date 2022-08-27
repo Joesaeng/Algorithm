@@ -133,6 +133,30 @@
     <ClCompile Include="1748.cpp">
       <Filter>2208</Filter>
     </ClCompile>
+    <ClCompile Include="4153.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11050.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="11866.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="1920.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="2164.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="15829.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="4949.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
+    <ClCompile Include="10773.cpp">
+      <Filter>2208</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
