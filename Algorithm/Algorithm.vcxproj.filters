@@ -55,9 +55,6 @@
     <ClCompile Include="tmp.cpp">
       <Filter>2208</Filter>
     </ClCompile>
-    <ClCompile Include="2805.cpp">
-      <Filter>2208</Filter>
-    </ClCompile>
     <ClCompile Include="1085.cpp">
       <Filter>2208\1x</Filter>
     </ClCompile>
@@ -163,8 +160,14 @@
     <ClCompile Include="17404.cpp">
       <Filter>2208\17x</Filter>
     </ClCompile>
+    <ClCompile Include="2805.cpp">
+      <Filter>2208\2x</Filter>
+    </ClCompile>
     <ClCompile Include="18111.cpp">
-      <Filter>2208</Filter>
+      <Filter>2208\18x</Filter>
+    </ClCompile>
+    <ClCompile Include="15649.cpp">
+      <Filter>2208\15x</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +215,9 @@
     </Filter>
     <Filter Include="2208\17x">
       <UniqueIdentifier>{c8cd2592-8558-40a9-bfb9-853c8d1de93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2208\18x">
+      <UniqueIdentifier>{5179df5b-df26-488f-a736-e8615e93a727}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

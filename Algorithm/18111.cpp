@@ -31,7 +31,7 @@ void func()
 		if (f + b >= s)
 		{
 			int t = f * 2 + s;
-			if (t <= res)
+			if (res >= t)
 			{
 				res = t;
 				h = j;
@@ -49,7 +49,7 @@ int main()
 	for (int i = 0; i < n; ++i)
 	{
 		for(int j = 0; j < m; ++j)
-		cin >> v[i][j];
+			cin >> v[i][j];
 	}
 	func();
 
