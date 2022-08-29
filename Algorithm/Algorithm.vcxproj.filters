@@ -169,6 +169,14 @@
     <ClCompile Include="15649.cpp">
       <Filter>2208\15x</Filter>
     </ClCompile>
+    <ClCompile Include="15650.cpp" />
+    <ClCompile Include="15651.cpp" />
+    <ClCompile Include="15652.cpp" />
+    <ClCompile Include="15654.cpp" />
+    <ClCompile Include="15655.cpp" />
+    <ClCompile Include="15656.cpp" />
+    <ClCompile Include="15657.cpp" />
+    <ClCompile Include="15663.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
