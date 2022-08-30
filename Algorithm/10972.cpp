@@ -61,6 +61,7 @@ int main()
 		}
 	}
 	// 사실 이해가 안된듯 함
+	// next_permutation(v.begin(),v.end()) 이거 하면 끝남
 
 	return 0;
 }

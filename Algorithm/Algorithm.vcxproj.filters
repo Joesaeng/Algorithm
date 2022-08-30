@@ -193,10 +193,21 @@
     <ClCompile Include="15663.cpp">
       <Filter>2208\15x</Filter>
     </ClCompile>
-    <ClCompile Include="15664.cpp" />
-    <ClCompile Include="15665.cpp" />
-    <ClCompile Include="15666.cpp" />
-    <ClCompile Include="10972.cpp" />
+    <ClCompile Include="15664.cpp">
+      <Filter>2208\15x</Filter>
+    </ClCompile>
+    <ClCompile Include="15665.cpp">
+      <Filter>2208\15x</Filter>
+    </ClCompile>
+    <ClCompile Include="15666.cpp">
+      <Filter>2208\15x</Filter>
+    </ClCompile>
+    <ClCompile Include="10972.cpp">
+      <Filter>2208\10x</Filter>
+    </ClCompile>
+    <ClCompile Include="1697.cpp" />
+    <ClCompile Include="13913.cpp" />
+    <ClCompile Include="14226.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
