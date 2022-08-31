@@ -208,6 +208,8 @@
     <ClCompile Include="1697.cpp" />
     <ClCompile Include="13913.cpp" />
     <ClCompile Include="14226.cpp" />
+    <ClCompile Include="13549.cpp" />
+    <ClCompile Include="1261.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
