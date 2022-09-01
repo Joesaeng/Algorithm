@@ -52,9 +52,6 @@
     <ClCompile Include="0819.cpp">
       <Filter>2208\08</Filter>
     </ClCompile>
-    <ClCompile Include="tmp.cpp">
-      <Filter>2208</Filter>
-    </ClCompile>
     <ClCompile Include="1085.cpp">
       <Filter>2208\1x</Filter>
     </ClCompile>
@@ -205,11 +202,28 @@
     <ClCompile Include="10972.cpp">
       <Filter>2208\10x</Filter>
     </ClCompile>
-    <ClCompile Include="1697.cpp" />
-    <ClCompile Include="13913.cpp" />
-    <ClCompile Include="14226.cpp" />
-    <ClCompile Include="13549.cpp" />
-    <ClCompile Include="1261.cpp" />
+    <ClCompile Include="1697.cpp">
+      <Filter>2208\1x</Filter>
+    </ClCompile>
+    <ClCompile Include="1261.cpp">
+      <Filter>2208\1x</Filter>
+    </ClCompile>
+    <ClCompile Include="13913.cpp">
+      <Filter>2208\13x</Filter>
+    </ClCompile>
+    <ClCompile Include="14226.cpp">
+      <Filter>2208\14x</Filter>
+    </ClCompile>
+    <ClCompile Include="13549.cpp">
+      <Filter>2208\13x</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp.cpp" />
+    <ClCompile Include="13023.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="1260.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
@@ -259,6 +273,9 @@
     </Filter>
     <Filter Include="2208\18x">
       <UniqueIdentifier>{5179df5b-df26-488f-a736-e8615e93a727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2209">
+      <UniqueIdentifier>{6665a9f7-05a8-4233-a78f-133b8cd5eb57}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
