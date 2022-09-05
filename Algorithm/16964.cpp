@@ -17,7 +17,6 @@ void DFS(int cur)
 {
 	if (ans[cnt] != cur) return;
 	cnt++;
-	if (vis[cur]) return;
 	vis[cur] = true;
 	for (int next : vec[cur])
 	{
@@ -42,13 +41,19 @@ int main()
 		ans[i] = a;
 		order[a] = i;
 	}
+	if (ans[1] != 1)
+	{
+		cout << "0";
+		return 0;
+	}
 	for (int i = 1; i <= n; ++i)
 	{
 		sort(vec[i].begin(), vec[i].end(), comp);
 	}
+	
 	DFS(1);
-	if (cnt == n + 1) cout << 1;
-	else cout << 0;
+	if (cnt == n + 1) cout << "1";
+	else cout << "0";
 
 	return 0;
 }
