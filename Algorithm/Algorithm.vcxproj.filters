@@ -281,7 +281,13 @@
     <ClCompile Include="14391.cpp">
       <Filter>2209</Filter>
     </ClCompile>
-    <ClCompile Include="14391_2.cpp">
+    <ClCompile Include="11724.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="1707.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="2667.cpp">
       <Filter>2209</Filter>
     </ClCompile>
   </ItemGroup>
