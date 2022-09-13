@@ -53,15 +53,9 @@ int main()
 			cin >> vec[i][j];
 			if (vec[i][j] == 0) // 입력받을때 익지 않은 토마토들을 스택에 넣어둠
 				stk.push(Pos{ i,j });
-		}
-	}
-	for (int i = 1; i <= m; ++i)
-	{
-		for (int j = 1; j <= n; ++j)
-		{
 			if (vec[i][j] == 1)
 			{
-				q.push(Pos{i,j}); // 처음부터 익어있는 토마토들을 큐에 넣어줌
+				q.push(Pos{ i,j }); // 처음부터 익어있는 토마토들을 큐에 넣어줌
 				vis[i][j] = true;
 			}
 		}

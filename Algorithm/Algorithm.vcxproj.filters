@@ -299,6 +299,30 @@
     <ClCompile Include="7576.cpp">
       <Filter>2209</Filter>
     </ClCompile>
+    <ClCompile Include="24416.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="9184.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="1904.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="9461.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="2579.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="2565.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="9251.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="12865.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
