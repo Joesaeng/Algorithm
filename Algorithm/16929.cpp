@@ -47,15 +47,17 @@ void DFS(char color, Pos yx, int begin)
 		Pos nextPos = yx + dir[i];
 		if (!nextPos.Cango()) continue;
 		if (board[nextPos.y][nextPos.x] != color) continue;
-		if (vis[nextPos.y][nextPos.x]) continue;
-		vis[nextPos.y][nextPos.x] = true;
-		DFS(color, nextPos, begin + 1);
-		
-		if (nextPos == start && begin >= 4)
+		if (!vis[nextPos.y][nextPos.x])
+		{
+			vis[nextPos.y][nextPos.x] = true;
+			DFS(color, nextPos, begin + 1);
+		}
+		else if (nextPos == start && begin >= 4)
+		{
 			ans = true;
-		return;
+			return;
+		}
 	}
-	
 }
 int main()
 {
@@ -76,6 +78,7 @@ int main()
 			if (ans) break;
 			memset(vis, false, sizeof(vis));
 			start = Pos{ i,j };
+			vis[i][j] = true;
 			DFS(board[i][j], Pos{i,j}, 1);
 		}
 	}
