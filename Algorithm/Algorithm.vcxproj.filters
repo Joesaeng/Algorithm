@@ -338,6 +338,28 @@
     <ClCompile Include="2146_2.cpp">
       <Filter>2209</Filter>
     </ClCompile>
+    <ClCompile Include="2407.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp" />
+    <ClCompile Include="1271.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="2558.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="3733.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="8437.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="25501.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="3009.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
@@ -390,6 +412,9 @@
     </Filter>
     <Filter Include="2209">
       <UniqueIdentifier>{6665a9f7-05a8-4233-a78f-133b8cd5eb57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bronze5">
+      <UniqueIdentifier>{71fb3f06-6336-4f6b-ac32-24ca71efae6b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
