@@ -2,19 +2,16 @@
 #include <bits/stdc++.h>
 #define FASTIO ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
-int vecx[3];
-int vecy[3];
-int a, b;
 int main()
 {
     FASTIO;
-    int x = 0, y = 0;
-    for (int i = 0; i < 3; ++i)
-    {
-        cin >> a >> b;
-        vecx[i] = a;
-        vecy[i] = b;
-    }
+    int x1, x2, x3, y1, y2, y3;
+    cin >> x1 >> y1;
+    cin >> x2 >> y2;
+    cin >> x3 >> y3;
+    int x = x1 == x2 ? x3 : x1 == x3 ? x2 : x1;
+    int y = y1 == y2 ? y3 : y1 == y3 ? y2 : y1;
+    cout << x << ' ' << y;
     
     return 0;
 }

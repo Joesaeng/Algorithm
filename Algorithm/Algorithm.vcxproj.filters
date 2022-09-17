@@ -360,6 +360,18 @@
     <ClCompile Include="3009.cpp">
       <Filter>2209</Filter>
     </ClCompile>
+    <ClCompile Include="2477.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="3053.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="1002.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="1004.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
