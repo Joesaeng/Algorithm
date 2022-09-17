@@ -74,3 +74,11 @@ string ll_div(string str, ll div)
 	s = s.substr(i, s.length());
 	return s;
 }
+
+// 두 좌표(x,y) 사이의 길이
+double length(int x, int y, int xx, int yy)
+{
+	double ret = 0;
+	ret = sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y));
+	return ret;
+}

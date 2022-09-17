@@ -23,10 +23,10 @@ int main()
         for (int j = 0; j < c; ++j)
         {
             cin >> cx >> cy >> r;
-            double sLen = length(x, cx, y, cy);
-            double eLen = length(xx, cx, yy, cy);
-            bool s = sLen > r ? true : false;
-            bool e = eLen > r ? true : false;
+            double sLen = length(x, y, cx, cy);
+            double eLen = length(xx, yy, cx, cy);
+            bool s = sLen < r ? true : false;
+            bool e = eLen < r ? true : false;
             if (s && e) continue;
             if (s) cnt++;
             if (e) cnt++;
