@@ -1,4 +1,10 @@
+// TEMPLATE
+
 #include <bits/stdc++.h>
+#define FASTIO ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+using namespace std;
+using ll = long long;
+
 
 // 큰 수 덧셈
 string Sum(string left, string right)
@@ -76,9 +82,52 @@ string ll_div(string str, ll div)
 }
 
 // 두 좌표(x,y) 사이의 길이
-double length(int x, int y, int xx, int yy)
+double length(double x, double y, double xx, double yy)
 {
-	double ret = 0;
-	ret = sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y));
+	double ret = sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y));
 	return ret;
+}
+
+// 헤론의 공식(세 변의 길이 a,b,c 가 있을 때 삼각형의 넓이를 구함)
+double Heron(double a, double b, double c)
+{
+	double s = (a + b + c) / 2;
+	double ret = sqrt(s * (s - a) * (s - b) * (s - c));
+	return ret;
+}
+
+// 신발끈 공식 : n개의 점으로 이루어진 다각형의 각 점들의 좌표가 시계or반시계 방향으로 주어졌을 때, 다각형의 넓이를 구하는 공식
+double shoelace(int n, vector<pair<double, double>>& points)
+{
+	double ret;
+	double fx = points[0].first;
+	double fy = points[0].second;
+	double aa = 0;
+	double bb = 0;
+	for (int i = 0; i < n - 1; ++i)
+	{
+		double a = points[i].first * points[i + 1].second;
+		double b = points[i].second * points[i + 1].first;
+		aa += a;
+		bb += b;
+	}
+	double a = points[n - 1].first * fy;
+	double b = points[n - 1].second * fx;
+	aa += a;
+	bb += b;
+
+	ret = abs(aa - bb) / 2;
+
+	return ret;
+}
+
+
+
+
+
+int main()
+{
+    FASTIO;
+
+    return 0;
 }

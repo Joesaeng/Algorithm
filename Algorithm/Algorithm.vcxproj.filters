@@ -341,7 +341,6 @@
     <ClCompile Include="2407.cpp">
       <Filter>2209</Filter>
     </ClCompile>
-    <ClCompile Include="template.cpp" />
     <ClCompile Include="1271.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
@@ -373,6 +372,16 @@
       <Filter>2209</Filter>
     </ClCompile>
     <ClCompile Include="1358.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="2166.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="2166_2.cpp">
+      <Filter>2209</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp" />
+    <ClCompile Include="1003.cpp">
       <Filter>2209</Filter>
     </ClCompile>
   </ItemGroup>
