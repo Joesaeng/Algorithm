@@ -121,7 +121,50 @@ double shoelace(int n, vector<pair<double, double>>& points)
 	return ret;
 }
 
+// 이중 우선순위 큐
+template<typename T>
+class DualQueue
+{
+public:
+    void input(T n)
+    {
+        q.insert(n);
+    }
+    void pop(T n)
+    {
+        if (q.empty()) return;
+        if (n == -1)
+        {
+            auto iter = q.begin();
+            q.erase(iter);
+        }
+        else if (n == 1)
+        {
+            auto iter = q.end();
+            --iter;
+            q.erase(iter);
+        }
+        
+    }
+    bool empty()
+    {
+        return q.empty();
+    }
+    int MAX()
+    {
+        auto iter = q.end();
+        --iter;
+        return *iter;
+    }
+    int MIN()
+    {
+        auto iter = q.begin();
+        return *iter;
+    }
 
+private:
+    multiset<T> q;
+};
 
 
 
