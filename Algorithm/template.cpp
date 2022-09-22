@@ -166,7 +166,14 @@ private:
     multiset<T> q;
 };
 
-
+bool compare(const pair<int, int>& a, const pair<int, int>& b)
+{
+	return a.first < b.first;
+}
+int bigger(const int left, const int right)
+{
+	return left > right ? left : right;
+}
 
 int main()
 {
