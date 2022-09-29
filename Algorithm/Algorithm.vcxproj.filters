@@ -447,6 +447,12 @@
     <ClCompile Include="1780.cpp">
       <Filter>2209_2</Filter>
     </ClCompile>
+    <ClCompile Include="1992.cpp">
+      <Filter>2209_2</Filter>
+    </ClCompile>
+    <ClCompile Include="5525.cpp">
+      <Filter>2209_2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
