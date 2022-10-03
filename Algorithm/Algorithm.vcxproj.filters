@@ -471,6 +471,12 @@
     <ClCompile Include="17219.cpp">
       <Filter>2209_2</Filter>
     </ClCompile>
+    <ClCompile Include="1629.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="1753.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
@@ -529,6 +535,9 @@
     </Filter>
     <Filter Include="2209_2">
       <UniqueIdentifier>{e3088c53-c73a-4f49-af33-d47df4975460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2210">
+      <UniqueIdentifier>{d7850c34-098f-4a09-80c0-5d730fd01d8d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
