@@ -6,27 +6,29 @@ using namespace std;
 int n, m;
 string str;
 vector<string> vec;
-bool discov[1001][1001][2];
+bool discov[1001][1001][2]; // 벽을 부수고 지나갔는지, 아닌지
 int ans;
 struct Pos
 {
     int y = 0;
     int x = 0;
-    int c = 0;
+    int c = 0; // 부쉈는가? 1 : 0
     int cnt = 0;
     Pos operator +(Pos& other)
     {
         Pos ret;
         ret.y = y + other.y;
         ret.x = x + other.x;
+        ret.c = c;
+        ret.cnt = cnt;
         return ret;
     }
 };
-bool func(Pos start)
+int func(Pos start)
 {
     queue<Pos> q;
     Pos pos = start;
-    pos.cnt = 1;
+    pos.cnt = 1; // 시작하는 칸을 센다.
     q.push(pos);
     discov[pos.y][pos.x][0] = true;
     Pos dir[4] =
@@ -42,48 +44,27 @@ bool func(Pos start)
         q.pop();
         if (pos.y == n && pos.x == m)
         {
-            ans = pos.cnt;
-            return true;
+            return pos.cnt;
         }
-        if(pos.c == 0)
         for (int next = 0; next < 4; ++next)
         {
             Pos nextPos = pos + dir[next];
+            nextPos.cnt++;
             if (nextPos.y < 1 || nextPos.y > n || nextPos.x < 1 || nextPos.x > m) continue;
-            if (discov[nextPos.y][nextPos.x][0]) continue;
-            if (vec[nextPos.y][nextPos.x] - '0' == 0)
+            if (vec[nextPos.y][nextPos.x] - '0' == 1 && pos.c == 0) // 다음 자리가 벽이고, 아직 벽을 부수지 않았는지
             {
-                discov[nextPos.y][nextPos.x][0] = true;
-                nextPos.cnt = pos.cnt + 1;
-                q.push(nextPos);
-            }
-            else
-            {
-                discov[nextPos.y][nextPos.x][1] = true;
-                nextPos.cnt = pos.cnt + 1;
+                discov[nextPos.y][nextPos.x][pos.c + 1] = true;
                 nextPos.c = 1;
                 q.push(nextPos);
             }
-        }
-        else
-        {
-            for (int next = 0; next < 4; ++next)
+            else if (vec[nextPos.y][nextPos.x] - '0' == 0 && discov[nextPos.y][nextPos.x][pos.c] == false)
             {
-                Pos nextPos = pos + dir[next];
-                if (nextPos.y < 1 || nextPos.y > n || nextPos.x < 1 || nextPos.x > m) continue;
-                if (discov[nextPos.y][nextPos.x][1]) continue;
-                if (discov[nextPos.y][nextPos.x][0]) continue;
-                if (vec[nextPos.y][nextPos.x] - '0' == 0)
-                {
-                    discov[nextPos.y][nextPos.x][1] = true;
-                    nextPos.cnt = pos.cnt + 1;
-                    nextPos.c = 1;
-                    q.push(nextPos);
-                }
+                discov[nextPos.y][nextPos.x][pos.c] = true;
+                q.push(nextPos);
             }
         }
     }
-    return false;
+    return -1;
 }
 
 int main()
@@ -96,8 +77,7 @@ int main()
         cin >> str;
         vec[i] += str;
     }
-    if (func(Pos{ 1,1 })) cout << ans;
-    else cout << "-1";
+    cout << func(Pos{ 1,1 });
     
     return 0;
 }
