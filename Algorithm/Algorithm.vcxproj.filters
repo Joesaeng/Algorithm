@@ -483,7 +483,19 @@
     <ClCompile Include="2206.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
+    <ClCompile Include="11444.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="9663.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="11404.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="11660.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="2263.cpp">
       <Filter>2210</Filter>
     </ClCompile>
   </ItemGroup>
