@@ -2,6 +2,7 @@
 
 #include <bits/stdc++.h>
 #define FASTIO ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define INF 987654321
 using namespace std;
 using ll = long long;
 
@@ -180,4 +181,35 @@ int main()
     FASTIO;
 
     return 0;
+}
+
+// 다익스트라 알고리즘
+int func(int start, int dest)
+{
+	int pos = start;
+	vector<int> dist = vector<int>(n + 1, INF);
+	priority_queue<pair<int, int>> q;
+	dist[pos] = 0;
+	q.push(pair{ 0,pos });
+
+	while (!q.empty())
+	{
+		int cost = -q.top().first;
+		pos = q.top().second;
+		q.pop();
+
+		if (pos == dest) return cost;
+
+		for (int i = 0; i < road[pos].size(); ++i)
+		{
+			int next = road[pos][i].second;
+			int nCost = road[pos][i].first;
+			if (dist[next] > cost + nCost)
+			{
+				dist[next] = cost + nCost;
+				q.push(pair{ -dist[next], next });
+			}
+		}
+	}
+	return -1;
 }
