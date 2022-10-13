@@ -15,8 +15,8 @@ void star(int y, int x, int n)
         return;
     }
     star(y, x,n/2);
-    star(y + 3*n/2, x - 3*n/2,n/2);
-    star(y + 3*n/2, x + 3*n/2,n/2);
+    star(y + 3 * n / 2, x - 3 * n / 2, n / 2);
+    star(y + 3 * n / 2, x + 3 * n / 2, n / 2);
 }
 int main()
 {

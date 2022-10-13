@@ -528,6 +528,9 @@
     <ClCompile Include="2448.cpp">
       <Filter>2210\별찍기</Filter>
     </ClCompile>
+    <ClCompile Include="2638.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
