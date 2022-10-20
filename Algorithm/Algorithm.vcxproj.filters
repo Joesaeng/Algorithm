@@ -549,6 +549,12 @@
     <ClCompile Include="14938.cpp">
       <Filter>2210</Filter>
     </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="15686.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2207">
