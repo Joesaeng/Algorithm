@@ -213,3 +213,20 @@ int func(int start, int dest)
 	}
 	return -1;
 }
+
+// а╤гу
+void DFS(int idx, int cnt)
+{
+	if (cnt == n)
+	{
+		// todo
+	}
+	for (int i = idx; i < MAX; ++i)
+	{
+		if (select[i]) continue;
+		select[i] = true;
+
+		DFS(i, cnt + 1);
+		select[i] = false;
+	}
+}

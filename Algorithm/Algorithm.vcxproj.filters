@@ -549,7 +549,7 @@
     <ClCompile Include="14938.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
+    <ClCompile Include="24900.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
     <ClCompile Include="15686.cpp">
@@ -559,6 +559,15 @@
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="17070.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="b5.cpp">
+      <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="14502.cpp">
+      <Filter>2210</Filter>
+    </ClCompile>
+    <ClCompile Include="13172.cpp">
       <Filter>2210</Filter>
     </ClCompile>
   </ItemGroup>
