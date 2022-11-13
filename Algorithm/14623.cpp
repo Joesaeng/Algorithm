@@ -24,8 +24,6 @@ string Sum(string left, string right)
     }
     reverse(ret.begin(), ret.end());
 
-
-
     return ret;
 }
 int main()

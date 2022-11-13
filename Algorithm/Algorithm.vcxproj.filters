@@ -570,8 +570,14 @@
     <ClCompile Include="13172.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="b4.cpp">
+    <ClCompile Include="14623.cpp">
       <Filter>Bronze5</Filter>
+    </ClCompile>
+    <ClCompile Include="4690.cpp">
+      <Filter>2211</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>2211</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -637,6 +643,9 @@
     </Filter>
     <Filter Include="2210\별찍기">
       <UniqueIdentifier>{4bce62b7-0018-4aa9-ae15-00dff005c2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2211">
+      <UniqueIdentifier>{5e7a7564-b972-4875-8389-645d833d951b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
