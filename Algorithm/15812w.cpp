@@ -11,9 +11,11 @@ struct pos
     int x = 0;
 };
 vector<pos> vec;
-queue<pos> q;
-int func()
+int func(pos a, pos b)
 {
+    queue<pos> q;
+    q.push(a);
+    q.push(b);
     int t = town;
     int cnt = 0;
     int dy[4] = { 1,-1,0,0 };
@@ -26,12 +28,11 @@ int func()
         {
             pos Pos = q.front();
             q.pop();
-            if (board[Pos.y][Pos.x] == 1)
+            if (board[Pos.y][Pos.x] == 1) // 독주머니를 통해 마을이 중독됬다!
             {
-                t--;
-                if (t == 0)
+                t--; // 중독되지 않은 마을의 개수
+                if (t == 0) // 전부 중독됬다면
                 {
-                    while (!q.empty()) q.pop();
                     return cnt;
                 }
             }
@@ -58,18 +59,17 @@ int main()
         {
             board[i][j] = s[j]-'0';
             if (board[i][j] == 1)
-                town++;
+                town++; // 마을의 개수
             else
-                vec.push_back({ i,j });
+                vec.push_back({ i,j }); // 독주머니를 놓을 수 있는 자리
         }
     }
+    // 마을이 없는(독주머니를 놓을 수 있는 자리) 에 두개의 독주머니를 놓는 모든 경우
     for (int i = 0; i < vec.size(); ++i)
     {
         for (int j = i + 1; j < vec.size(); ++j)
         {
-            q.push(vec[i]);
-            q.push(vec[j]);
-            ans = min(ans,func());
+            ans = min(ans,func(vec[i],vec[j]));
         }
     }
     cout << ans;

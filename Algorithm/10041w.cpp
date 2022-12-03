@@ -4,8 +4,9 @@
 using namespace std;
 using ll = long long;
 int w, h, n, ans;
-int BFS(int by, int bx,int ey, int ex)
+int func(int by, int bx,int ey, int ex)
 {
+    // 파워 하드코딩
     queue<pair<int, pair<int,int>>> q;
     q.push({ by,{bx,0 } });
     while (!q.empty())
@@ -68,7 +69,7 @@ int main()
     while (n--)
     {
         cin >> c >> d;
-        ans += BFS(a, b, c, d);
+        ans += func(a, b, c, d);
         a = c;
         b = d;
     }

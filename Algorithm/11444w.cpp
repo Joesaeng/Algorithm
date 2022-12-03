@@ -7,6 +7,9 @@ using ll = long long;
 #define matrix vector<vector<ll>>
 ll n;
 matrix vec;
+// 피보나치의 점화식을 행렬 곱셈을 통해 구한다.
+// | F(n+1) F(n)   |  == | 1  1 |^n
+// | F(n)   F(n-1) |  == | 1  0 |
 matrix operator*(matrix& left, matrix& right)
 {
     matrix temp(2, vector<ll>(2));

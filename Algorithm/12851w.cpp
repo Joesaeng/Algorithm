@@ -5,12 +5,13 @@ using namespace std;
 int n, k, t,cnt;
 int vis[100001];
 bool b;
+//BFS문제
 void func()
 {
-    queue<pair<int,int>> q;
+    queue<int> q;
     int pos = n;
     int time = 0;
-    q.push({ pos,time });
+    q.push(pos);
     vis[pos] = 0;
     while (!q.empty())
     {
@@ -18,8 +19,7 @@ void func()
         int qsize = q.size();
         for (int i = 0; i < qsize; ++i)
         {
-            pos = q.front().first;
-            time = q.front().second;
+            pos = q.front();
             q.pop();
             if (pos == k)
             {
@@ -27,18 +27,20 @@ void func()
                 t = time;
                 b = true; // 이번 시간에 찾았다 == 최소 시간
             }
-            for (int j = 0; j < 3; ++j)
+            for (int j = 0; j < 3; ++j) // X-1,X+1,X*2 이동
             {
                 int x;
                 if (j == 0) x = pos + 1;
                 else if (j == 1) x = pos - 1;
                 else if (j == 2) x = pos * 2;
                 if (x < 0 || x > 100000) continue;
-                if (vis[x] != -1 && vis[x] < time+1) continue; // 방문을 했고, 그 방문이 다음 방문보다 짧은 시간이라면 continue
-                q.push({ x,time+1 });
+                // 방문을 했고, 그 방문이 다음 방문보다 짧은 시간이라면 continue
+                if (vis[x] != -1 && vis[x] < time+1) continue; 
+                q.push(x);
                 vis[x] = time+1;
             }
         }
+        time++;
     }
 }
 int main()

@@ -5,6 +5,9 @@ using namespace std;
 int a;
 int vec[10001];
 int n, idx;
+// 나는 트리를 직접 클래스로 구현해서 풀이를 했는데 시간이 152ms가 나왔다
+// 그래서 다른사람들 0ms로 나온 풀이를 보니 훨씬 빠르고 간단해 보였다
+// 그런데 다시 풀라고 해도 트리를 구현해서 풀었을것 같다
 struct Node
 {
     int key;

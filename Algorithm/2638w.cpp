@@ -8,6 +8,9 @@ int vec[100][100];
 bool vis[100][100];
 queue<pair<int, int>> outQ;
 queue<pair<int, int>> cq;
+// 가장자리에 있는 치즈들을 찾는다.
+// 그 중에 녹을 치즈들(외부공기와 2변이상이 맞닿아있는)을 찾는다.
+// 녹을 치즈들을 녹이고, 이걸 반복?
 void outside()
 {
     int dy[4] = { -1,1,0,0 };
@@ -49,7 +52,10 @@ void outside()
         else vis[y][x] = false; // 녹지 않았다면 다음을 위해 방문을 취소한다
     }
     int qsize = outQ.size();
-    for (int i = 0; i < qsize; ++i) // 이번에 녹을 치즈들을 녹이는 과정, 찾자마자 녹이게 되면 이번 턴에서 녹지 않아야 할 치즈들이 녹게된다.
+
+    // 이번에 녹을 치즈들을 녹이는 과정, 
+    // 찾자마자 녹이게 되면 이번 턴에서 녹지 않아야 할 치즈들이 녹게된다.
+    for (int i = 0; i < qsize; ++i) 
     {
         int y = outQ.front().first;
         int x = outQ.front().second;
@@ -75,7 +81,8 @@ int main()
     outQ.push({ 0,m-1 });
     outQ.push({ n-1,0 });
     outQ.push({ n-1,m-1 });
-    vis[0][0] = vis[0][m - 1] = vis[n - 1][0] = vis[n - 1][m - 1] = true; // 각 모서리에서 탐색을 시작한다 : 0,0에서 시작해도 무방함
+    // 각 모서리에서 탐색을 시작한다 : 0,0에서 시작해도 무방함
+    vis[0][0] = vis[0][m - 1] = vis[n - 1][0] = vis[n - 1][m - 1] = true; 
     while (cheez > 0)
     {
         outside();
@@ -86,6 +93,3 @@ int main()
     return 0;
 }
 
-// 가장자리에 있는 치즈들을 찾는다.
-// 그 중에 녹을 치즈들(외부공기와 2변이상이 맞닿아있는)을 찾는다.
-// 녹을 치즈들을 녹이고, 이걸 반복?

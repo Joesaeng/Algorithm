@@ -7,7 +7,9 @@ vector<vector<int>> vec; // 맵
 vector<pair<int,int>> s; // 벽을 세울 위치
 vector<pair<int, int>> v; // 바이러스 위치
 bool vis[65];
-int BFS(vector<vector<int>> vc) // 맵이 항상 바뀌기 떄문에 복사해서 넘겨받음
+// 3개의 벽을 세우는 경우의 수를 DFS로 찾고
+// BFS를 통해 안전영역의 크기를 알아낸다.
+int BFS(vector<vector<int>> vc) // 맵을 바꾸면서 찾기 때문에 복사해서 받는다.
 {
 	int ret = 0;
 	queue<pair<int, int>> q;
@@ -17,7 +19,9 @@ int BFS(vector<vector<int>> vc) // 맵이 항상 바뀌기 떄문에 복사해서 넘겨받음
 	}
 	int dy[4] = { 0,0,1,-1 };
 	int dx[4] = { 1,-1,0,0 };
-	while (!q.empty())
+
+	// 바이러스를 퍼트리는 BFS
+	while (!q.empty()) 
 	{
 		int y = q.front().first;
 		int x = q.front().second;
@@ -32,7 +36,9 @@ int BFS(vector<vector<int>> vc) // 맵이 항상 바뀌기 떄문에 복사해서 넘겨받음
 			q.push({ nexty,nextx });
 		}
 	}
-	for (int i = 0; i < n; ++i)
+
+	// 바이러스를 퍼트린 후에 맵을 순회하며 안전영역의 개수를 찾음
+	for (int i = 0; i < n; ++i) 
 	{
 		for (int j = 0; j < m; ++j)
 		{

@@ -483,16 +483,16 @@
     <ClCompile Include="2206.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="11444.cpp">
+    <ClCompile Include="11444w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="9663.cpp">
+    <ClCompile Include="9663w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="11404.cpp">
+    <ClCompile Include="11404w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="11660.cpp">
+    <ClCompile Include="11660w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="2263.cpp">
@@ -510,7 +510,7 @@
     <ClCompile Include="1916.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="9935.cpp">
+    <ClCompile Include="9935w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="2096.cpp">
@@ -528,70 +528,70 @@
     <ClCompile Include="2448.cpp">
       <Filter>2210\별찍기</Filter>
     </ClCompile>
-    <ClCompile Include="2638.cpp">
+    <ClCompile Include="2638w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="5639.cpp">
+    <ClCompile Include="5639w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="10830.cpp">
+    <ClCompile Include="10830w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="11779.cpp">
+    <ClCompile Include="11779w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="12851.cpp">
+    <ClCompile Include="12851w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="16953.cpp">
+    <ClCompile Include="16953w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="14938.cpp">
+    <ClCompile Include="14938w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="24900.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
-    <ClCompile Include="15686.cpp">
+    <ClCompile Include="15686w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="17144.cpp">
+    <ClCompile Include="17144w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="17070.cpp">
+    <ClCompile Include="17070w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="b5.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
-    <ClCompile Include="14502.cpp">
+    <ClCompile Include="14502w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
-    <ClCompile Include="13172.cpp">
+    <ClCompile Include="13172w.cpp">
       <Filter>2210</Filter>
     </ClCompile>
     <ClCompile Include="14623.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
-    <ClCompile Include="4690.cpp">
+    <ClCompile Include="4690w.cpp">
       <Filter>2211</Filter>
     </ClCompile>
-    <ClCompile Include="10041.cpp">
+    <ClCompile Include="10041w.cpp">
       <Filter>2211</Filter>
     </ClCompile>
     <ClCompile Include="소스.cpp">
       <Filter>Bronze5</Filter>
     </ClCompile>
-    <ClCompile Include="1005.cpp">
+    <ClCompile Include="1005w.cpp">
       <Filter>2211</Filter>
     </ClCompile>
     <ClCompile Include="1057.cpp">
       <Filter>2211</Filter>
     </ClCompile>
-    <ClCompile Include="15812.cpp">
+    <ClCompile Include="15812w.cpp">
       <Filter>2211</Filter>
     </ClCompile>
-    <ClCompile Include="12908.cpp">
+    <ClCompile Include="12908w.cpp">
       <Filter>2211</Filter>
     </ClCompile>
   </ItemGroup>

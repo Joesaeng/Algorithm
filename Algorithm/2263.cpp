@@ -6,7 +6,8 @@ int n;
 int in[100001]; // 인오더 | inoder (중위순회) 왼쪽자식노드 -> 루트노드 -> 오른쪽자식노드
 int post[100001]; // 포스트오더 | postorder (후위순회) 왼쪽자식노드 -> 오른쪽자식노드 -> 루트노드
 int idx[100001];
-void func(int inS, int inE, int postS, int postE) // 프리오더 | preoder (전위순회) 루트노드 -> 왼쪽자식노드 -> 오른쪽자식노드
+// 프리오더 | preoder (전위순회) 루트노드 -> 왼쪽자식노드 -> 오른쪽자식노드
+void func(int inS, int inE, int postS, int postE) 
 {
     if (inS > inE || postS > postE)
         return;

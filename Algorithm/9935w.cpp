@@ -14,9 +14,11 @@ int main()
     for (int i = 0; i < str.size(); ++i)
     {
         ans += str[i];
-        if (str[i] == bomb[bomb.size() - 1])
+        // 이번에 추가한 문자가 폭발 문자열의 끝자리와 같다면
+        if (str[i] == bomb[bomb.size() - 1]) 
         {
             bool b = true;
+            // 문자열에서 앞쪽으로 이동하면서 폭발 문자열이 맞는지 확인
             for (int j = 0; j < bomb.size(); ++j)
             {
                 if (ans.size() - 1 - j < 0) break;

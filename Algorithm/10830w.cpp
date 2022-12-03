@@ -6,6 +6,7 @@ using ll = long long;
 using namespace std;
 int n;
 ll b;
+// 행렬의 곱셉을 구현하고, 분할정복으로 풀어야 하는 문제.
 struct matrix
 {
     matrix()

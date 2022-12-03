@@ -3,13 +3,14 @@
 #define FASTIO ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
 int n, m, t;
-vector<pair<int, int>> home;
-vector<pair<int, int>> cHome;
-vector<bool> vis;
+vector<pair<int, int>> home; // 집의 위치
+vector<pair<int, int>> cHome; // 치킨집의 위치
+vector<bool> vis; 
 vector<int> sel;
 int ans = 987654321;
-void DFS(int idx, int cnt)
+void DFS(int idx, int cnt) 
 {
+    // 조합을 통해 폐업하지 않을 m개의 치킨집을 구하는 경우의 수를 찾아 치킨거리를 구한다
     if (cnt == m) // m개의 치킨집을 선택
     {
         int tAns=0;
@@ -18,8 +19,9 @@ void DFS(int idx, int cnt)
             int tmp = 987654321;
             for (int j = 0; j < m; ++j)
             {
-                tmp = min(tmp,abs(cHome[sel[j]].first - home[i].first) + abs(cHome[sel[j]].second - home[i].second));
-                //                현재 선택한 치킨집과 각 집들의 거리를 구함
+                tmp = min(tmp,abs(cHome[sel[j]].first - home[i].first) 
+                    + abs(cHome[sel[j]].second - home[i].second));
+                //   현재 선택한 치킨집과 각 집들의 거리를 구함
             }
             tAns += tmp;
         }
@@ -36,7 +38,6 @@ void DFS(int idx, int cnt)
         vis[i] = false;
     }
 }
-
 int main()
 {
     FASTIO;
